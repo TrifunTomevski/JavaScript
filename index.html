@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Challenge12</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <div class="wrap">
+            <ul>
+                <li>The Hobbit by J. R. R. Tolkien</li>
+                <li>Harry Potter by J. K. Rowling</li>
+                <li>50 Shades of Grey bt E. L. James</li>
+                <li>Don Quixote by Miguel de Cervantes</li>
+                <li>Hamlet by William Shakespeare</li>
+            </ul>
+
+            <ul id="book-list"></ul>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Max Pages</th>
+                        <th>On Page</th>
+                        <th>Progress</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Hobbit</td>
+                        <td>J. R. R. Tolkien</td>
+                        <td>200</td>
+                        <td>60</td>
+                        <td>
+                            <div class="progress" id="myProgress">
+                                <div class="bar pBar1">30%</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Harry Potter</td>
+                        <td>J. K. Rowling</td>
+                        <td>250</td>
+                        <td>150</td>
+                        <td>
+                            <div class="progress" id="myProgress">
+                                <div class="bar pBar2">60%</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>50 Shades of Grey</td>
+                        <td>E. L. James</td>
+                        <td>150</td>
+                        <td>150</td>
+                        <td>
+                            <div class="progress" id="myProgress">
+                                <div class="bar pBar3">100%</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Don Quixote</td>
+                        <td>Miguel de Cervantes</td>
+                        <td>350</td>
+                        <td>300</td>
+                        <td>
+                            <div class="progress" id="myProgress">
+                                <div class="bar pBar4">86%</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hamlet</td>
+                        <td>William Shakespeare</td>
+                        <td>550</td>
+                        <td>550</td>
+                        <td>
+                            <div class="progress" id="myProgress">
+                                <div class="bar pBar5">100%</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Add a book to the list:</h3>
+            <form id="add-book-form">
+                <label for="title-input"></label>
+                <input
+                    type="text"
+                    id="title-input"
+                    placeholder="Book Title"
+                    required
+                /><br />
+
+                <label for="author-input"></label>
+                <input
+                    type="text"
+                    id="author-input"
+                    placeholder="Book Author"
+                    required
+                /><br />
+
+                <label for="max-pages-input"></label>
+                <input
+                    type="number"
+                    id="max-pages-input"
+                    placeholder="Book Max Pages"
+                    required
+                /><br />
+
+                <label for="on-page-input"></label>
+                <input
+                    type="number"
+                    id="on-page-input"
+                    placeholder="Current Page On..."
+                    required
+                /><br />
+
+                <button type="submit">Add to list</button>
+            </form>
+        </div>
+
+        <!-- JS -->
+        <script src="./_main.js"></script>
+    </body>
+</html>
